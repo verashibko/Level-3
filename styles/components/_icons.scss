@@ -1,0 +1,48 @@
+.icons {
+    &__svg {
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        transition: stroke 0.9s;
+        &:hover {
+            stroke: cornflowerblue;
+        }
+    }
+    &__footer {
+        position: relative;
+        left: 20%;
+        margin: 39px 13px 13px 13px;
+    }
+    @media (max-width: 1024px) {
+        &__footer {
+            zoom: 80%;
+            margin: 50px 16px 20px 15px;
+        }
+    }
+    @media (max-width: 924px) {
+        &__footer {
+            zoom: 70%;
+        }
+    }
+    @media (max-width: 768px) {
+        &__footer {
+            zoom: 40%;
+            left: 30%;
+        }
+    }
+    @media (max-width: 570px) {
+        &__svg {
+            zoom: 43%;
+            margin: 9px;
+        }
+        &__footer {
+            left: 20%;
+        }
+    }
+    @media (max-width: 450px) {
+        &__footer {
+            left: 15%;
+            zoom: 35%;
+        }
+    }
+}
